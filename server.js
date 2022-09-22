@@ -4,9 +4,6 @@ const server = express();
 const mongoClient = require("mongodb");
 
 const port = "3000";
-const uri =
-    "mongodb+srv://leoAndrade:2204@cluster0.q0us8pv.mongodb.net/?retryWrites=true&w=majority";
-
 server.get("/", async (request, response) => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();

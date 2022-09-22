@@ -1,19 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
-const { MongoClient } = require("mongodb");
-const jsdom = require("jsdom");
-const JSDOM = jsdom.JSDOM;
-
-const puppeteer = require("puppeteer");
-const express = require("express");
-const server = express();
-
-const uri =
-    "mongodb+srv://leoAndrade:2204@cluster0.q0us8pv.mongodb.net/?retryWrites=true&w=majority";
-
-
-
 
 createDbFile();
 saveHtmlPages();
